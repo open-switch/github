@@ -1,3 +1,10 @@
+module "SAI" {
+  source      = "./modules/repo"
+  name        = "SAI"
+  description = "Switch Abstraction Interface"
+  default_branch = "dell.1.2+"
+}
+
 module "continuous-integration" {
   source      = "./modules/repo"
   name        = "continuous-integration"
@@ -20,11 +27,4 @@ module "tools_opx-py" {
   source      = "./modules/repo"
   name        = "tools_opx-py"
   description = "OpenSwitch development tool"
-}
-
-module "SAI" {
-  source      = "./modules/repo"
-  name        = "SAI"
-  description = "Switch Abstraction Interface"
-  default_branch = "dell.1.2+"
 }

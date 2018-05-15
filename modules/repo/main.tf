@@ -12,8 +12,8 @@ resource "github_repository" "repo" {
 }
 
 resource "github_branch_protection" "branch_protection" {
-  repository = "${var.name}"
-  branch = "master"
+  repository = "${github_repository.repo.name}"
+  branch = "${github_repository.repo.default_branch}"
   enforce_admins = false
 
   required_pull_request_reviews {

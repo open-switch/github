@@ -1,1 +1,7 @@
 * @open-switch/administration
+
+*.yang   @open-switch/modeling
+*.yhist  @open-switch/modeling
+debian/  @open-switch/operations
+*.md     @open-switch/documentation
+.github/ @open-switch/administration

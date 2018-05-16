@@ -12,63 +12,63 @@ resource "github_team" "development" {
 
 resource "github_team" "cps" {
   name           = "CPS"
-  description    = "CPS Maintainers"
+  description    = "CPS maintainers"
   privacy        = "closed"
   parent_team_id = "${github_team.development.id}"
 }
 
 resource "github_team" "logging" {
   name           = "Logging"
-  description    = "Logging Maintainers"
+  description    = "Logging maintainers"
   privacy        = "closed"
   parent_team_id = "${github_team.development.id}"
 }
 
 resource "github_team" "nas" {
   name           = "NAS"
-  description    = "NAS Maintainers"
+  description    = "NAS maintainers"
   privacy        = "closed"
   parent_team_id = "${github_team.development.id}"
 }
 
 resource "github_team" "pas" {
   name           = "PAS"
-  description    = "PAS Maintainers"
+  description    = "PAS maintainers"
   privacy        = "closed"
   parent_team_id = "${github_team.development.id}"
 }
 
 resource "github_team" "platform" {
   name           = "Platform"
-  description    = "Platform Maintainers"
+  description    = "Platform maintainers"
   privacy        = "closed"
   parent_team_id = "${github_team.development.id}"
 }
 
 resource "github_team" "sai" {
   name           = "SAI"
-  description    = "SAI Maintainers"
+  description    = "SAI maintainers"
   privacy        = "closed"
   parent_team_id = "${github_team.development.id}"
 }
 
 resource "github_team" "sdi" {
   name           = "SDI"
-  description    = "SDI Maintainers"
+  description    = "SDI maintainers"
   privacy        = "closed"
   parent_team_id = "${github_team.development.id}"
 }
 
 resource "github_team" "snmp" {
   name           = "SNMP"
-  description    = "SNMP Maintainers"
+  description    = "SNMP maintainers"
   privacy        = "closed"
   parent_team_id = "${github_team.development.id}"
 }
 
-resource "github_team" "modeling" {
-  name           = "Modeling"
-  description    = "Modeling Maintainers"
+resource "github_team" "yang" {
+  name           = "Yang"
+  description    = "Yang model maintainers"
   privacy        = "closed"
   parent_team_id = "${github_team.development.id}"
 }

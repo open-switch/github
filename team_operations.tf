@@ -7,6 +7,9 @@ resource "github_team" "operations" {
 variable "operations_repos" {
   default = [
     "continuous-integration",
+    "opx-build",
+    "opx-manifest",
+    "opx-onie-installer",
     "rootfs",
     "tools_opx-py",
   ]

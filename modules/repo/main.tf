@@ -16,6 +16,11 @@ resource "github_branch_protection" "branch_protection" {
   branch = "${github_repository.repo.default_branch}"
   enforce_admins = false
 
+  required_status_checks {
+    strict = false
+    contexts = ["DCO"]
+  }
+
   required_pull_request_reviews {
     dismiss_stale_reviews = true
     require_code_owner_reviews = true

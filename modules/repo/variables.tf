@@ -7,3 +7,7 @@ variable "description" {
 variable "default_branch" {
   default = "master"
 }
+variable "strict" {
+  default = "false"
+  description = "Pull requests must be current with master if true"
+}

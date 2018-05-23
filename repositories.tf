@@ -51,6 +51,7 @@ module "github" {
   source      = "./modules/repo"
   name        = "github"
   description = "GitHub configuration."
+  strict      = "true"
 }
 
 module "infra_k8s" {

@@ -17,7 +17,7 @@ resource "github_branch_protection" "branch_protection" {
   enforce_admins = false
 
   required_status_checks {
-    strict = false
+    strict = "${var.strict}"
     contexts = ["DCO"]
   }
 

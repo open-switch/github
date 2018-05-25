@@ -14,7 +14,7 @@ variable "yang_repos" {
 
 resource "github_team_repository" "yang" {
   count      = "${length(var.yang_repos)}"
-  permission = "admin"
+  permission = "push"
   repository = "${element(var.yang_repos, count.index)}"
   team_id    = "${github_team.yang.id}"
 }

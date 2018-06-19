@@ -2,13 +2,14 @@ resource "github_repository" "repo" {
   name               = "${var.name}"
   description        = "${var.description}"
   homepage_url       = "https://openswitch.net"
-  default_branch     = "${var.default_branch}"
+  # default_branch     = "${var.default_branch}"
   has_issues         = true
   has_downloads      = true
   has_projects       = false
   has_wiki           = true
   allow_merge_commit = false
   auto_init          = true
+  archived           = "${var.archived}"
 }
 
 resource "github_branch_protection" "branch_protection" {

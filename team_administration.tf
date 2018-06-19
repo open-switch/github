@@ -19,6 +19,7 @@ variable "administration_repos" {
     "infra_project-config",
     "infra_puppet-gerrit",
     "infra_system-config",
+    "linux-sources",
     "opx-alarm",
     "opx-base-model",
     "opx-build",

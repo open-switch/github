@@ -44,7 +44,7 @@ module "chef-opx-examples" {
 module "continuous-integration" {
   source      = "./modules/repo"
   name        = "continuous-integration"
-  description = "Concourse CI/CD configuration."
+  description = "OpenSwitch CI/CD configuration."
 }
 
 module "github" {
@@ -58,24 +58,34 @@ module "infra_k8s" {
   source      = "./modules/repo"
   name        = "infra_k8s"
   description = "OpenSwitch Cluster."
+  archived    = true
 }
 
 module "infra_project-config" {
   source      = "./modules/repo"
   name        = "infra_project-config"
   description = ""
+  archived    = true
 }
 
 module "infra_puppet-gerrit" {
   source      = "./modules/repo"
   name        = "infra_puppet-gerrit"
   description = ""
+  archived    = true
 }
 
 module "infra_system-config" {
   source      = "./modules/repo"
   name        = "infra_system-config"
   description = ""
+  archived    = true
+}
+
+module "linux-sources" {
+  source      = "./modules/repo"
+  name        = "linux-sources"
+  description = "OpenSwitch Linux Sources"
 }
 
 module "opx-alarm" {

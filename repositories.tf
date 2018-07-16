@@ -3,6 +3,7 @@ module "SAI" {
   name        = "SAI"
   description = "Switch Abstraction Interface."
   default_branch = "dell.1.2+"
+  checks      = ["DCO", "buildkite/SAI-stretch"]
 }
 
 module "ansible-opx-examples" {
@@ -52,6 +53,7 @@ module "github" {
   name        = "github"
   description = "GitHub configuration."
   strict      = "true"
+  checks      = ["DCO", "buildkite/github"]
 }
 
 module "infra_k8s" {
@@ -92,12 +94,14 @@ module "opx-alarm" {
   source      = "./modules/repo"
   name        = "opx-alarm"
   description = ""
+  checks      = ["DCO", "buildkite/opx-alarm-stretch"]
 }
 
 module "opx-base-model" {
   source      = "./modules/repo"
   name        = "opx-base-model"
   description = ""
+  checks      = ["DCO", "buildkite/opx-base-model-stretch"]
 }
 
 module "opx-build" {
@@ -110,24 +114,28 @@ module "opx-common-utils" {
   source      = "./modules/repo"
   name        = "opx-common-utils"
   description = ""
+  checks      = ["DCO", "buildkite/opx-common-utils-stretch"]
 }
 
 module "opx-core" {
   source      = "./modules/repo"
   name        = "opx-core"
   description = ""
+  checks      = ["DCO", "buildkite/opx-core-stretch"]
 }
 
 module "opx-cps" {
   source      = "./modules/repo"
   name        = "opx-cps"
   description = ""
+  checks      = ["DCO", "buildkite/opx-cps-stretch"]
 }
 
 module "opx-db-sql" {
   source      = "./modules/repo"
   name        = "opx-db-sql"
   description = ""
+  checks      = ["DCO", "buildkite/opx-db-sql-stretch"]
 }
 
 module "opx-docs" {
@@ -140,6 +148,7 @@ module "opx-logging" {
   source      = "./modules/repo"
   name        = "opx-logging"
   description = ""
+  checks      = ["DCO", "buildkite/opx-logging-stretch"]
 }
 
 module "opx-manifest" {
@@ -152,60 +161,70 @@ module "opx-nas-acl" {
   source      = "./modules/repo"
   name        = "opx-nas-acl"
   description = ""
+  checks      = ["DCO", "buildkite/opx-nas-acl-stretch"]
 }
 
 module "opx-nas-common" {
   source      = "./modules/repo"
   name        = "opx-nas-common"
   description = ""
+  checks      = ["DCO", "buildkite/opx-nas-common-stretch"]
 }
 
 module "opx-nas-daemon" {
   source      = "./modules/repo"
   name        = "opx-nas-daemon"
   description = ""
+  checks      = ["DCO", "buildkite/opx-nas-daemon-stretch"]
 }
 
 module "opx-nas-interface" {
   source      = "./modules/repo"
   name        = "opx-nas-interface"
   description = ""
+  checks      = ["DCO", "buildkite/opx-nas-interface-stretch"]
 }
 
 module "opx-nas-l2" {
   source      = "./modules/repo"
   name        = "opx-nas-l2"
   description = ""
+  checks      = ["DCO", "buildkite/opx-nas-l2-stretch"]
 }
 
 module "opx-nas-l3" {
   source      = "./modules/repo"
   name        = "opx-nas-l3"
   description = ""
+  checks      = ["DCO", "buildkite/opx-nas-l3-stretch"]
 }
 
 module "opx-nas-linux" {
   source      = "./modules/repo"
   name        = "opx-nas-linux"
   description = ""
+  checks      = ["DCO", "buildkite/opx-nas-linux-stretch"]
 }
 
 module "opx-nas-ndi" {
   source      = "./modules/repo"
   name        = "opx-nas-ndi"
   description = ""
+  checks      = ["DCO", "buildkite/opx-nas-ndi-stretch"]
 }
 
 module "opx-nas-ndi-api" {
   source      = "./modules/repo"
   name        = "opx-nas-ndi-api"
   description = ""
+  checks      = ["DCO", "buildkite/opx-nas-ndi-api-stretch"]
 }
 
 module "opx-nas-qos" {
   source      = "./modules/repo"
   name        = "opx-nas-qos"
   description = ""
+  checks      = ["DCO", "buildkite/opx-nas-qos-stretch"]
 }
 
 module "opx-northbound" {
@@ -224,30 +243,35 @@ module "opx-pas" {
   source      = "./modules/repo"
   name        = "opx-pas"
   description = ""
+  checks      = ["DCO", "buildkite/opx-pas-stretch"]
 }
 
 module "opx-platform-config" {
   source      = "./modules/repo"
   name        = "opx-platform-config"
   description = ""
+  checks      = ["DCO", "buildkite/opx-platform-config-stretch"]
 }
 
 module "opx-sai-vm" {
   source      = "./modules/repo"
   name        = "opx-sai-vm"
   description = ""
+  checks      = ["DCO", "buildkite/opx-sai-vm-stretch"]
 }
 
 module "opx-sdi-sys" {
   source      = "./modules/repo"
   name        = "opx-sdi-sys"
   description = ""
+  checks      = ["DCO", "buildkite/opx-sdi-sys-stretch"]
 }
 
 module "opx-snmp" {
   source      = "./modules/repo"
   name        = "opx-snmp"
   description = ""
+  checks      = ["DCO", "buildkite/opx-snmp-stretch"]
 }
 
 module "opx-test" {
@@ -260,12 +284,14 @@ module "opx-tmpctl" {
   source      = "./modules/repo"
   name        = "opx-tmpctl"
   description = ""
+  checks      = ["DCO", "buildkite/opx-tmpctl-stretch"]
 }
 
 module "opx-tools" {
   source      = "./modules/repo"
   name        = "opx-tools"
   description = ""
+  checks      = ["DCO", "buildkite/opx-tools-stretch"]
 }
 
 module "puppet-opx-examples" {

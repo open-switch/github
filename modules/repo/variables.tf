@@ -14,3 +14,7 @@ variable "strict" {
   default = "false"
   description = "Pull requests must be current with master if true"
 }
+variable "checks" {
+  default = ["DCO"]
+  description = "Required status checks"
+}

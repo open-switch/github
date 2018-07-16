@@ -19,7 +19,7 @@ resource "github_branch_protection" "branch_protection" {
 
   required_status_checks {
     strict = "${var.strict}"
-    contexts = ["DCO"]
+    contexts = "${var.checks}"
   }
 
   required_pull_request_reviews {

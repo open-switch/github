@@ -108,6 +108,7 @@ module "opx-build" {
   source      = "./modules/repo"
   name        = "opx-build"
   description = "Build environment and scripts for OpenSwitch."
+  checks      = ["DCO", "buildkite/opx-build"]
 }
 
 module "opx-common-utils" {

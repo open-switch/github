@@ -2,7 +2,6 @@ resource "github_team" "dhcp" {
   name        = "DHCP"
   description = ""
   privacy     = "closed"
-  parent_team_id = "${github_team.development.id}"
 }
 
 variable "dhcp_repos" {

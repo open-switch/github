@@ -139,6 +139,13 @@ module "opx-db-sql" {
   checks      = ["DCO", "buildkite/opx-db-sql-stretch"]
 }
 
+module "opx-dhcp-agent" {
+  source      = "./modules/repo"
+  name        = "opx-dhcp-agent"
+  description = "DHCP Relay and Switch Agent"
+  checks      = ["DCO"]
+}
+
 module "opx-docs" {
   source      = "./modules/repo"
   name        = "opx-docs"

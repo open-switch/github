@@ -1,4 +1,4 @@
-# GitHub Organization Automation
+# GitHub Automation
 
 > Need a personal access token with repo, admin:org, and delete_project caps.
 

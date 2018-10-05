@@ -11,6 +11,7 @@ variable "development_repos" {
     "opx-core",
     "opx-db-sql",
     "opx-northbound",
+    "opx-system-utils",
     "opx-tmpctl",
     "opx-tools",
   ]

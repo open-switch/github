@@ -46,6 +46,7 @@ module "continuous-integration" {
   source      = "./modules/repo"
   name        = "continuous-integration"
   description = "OpenSwitch CI/CD configuration."
+  checks      = ["DCO", "buildkite/continuous-integration"]
 }
 
 module "github" {
@@ -245,6 +246,7 @@ module "opx-onie-installer" {
   source      = "./modules/repo"
   name        = "opx-onie-installer"
   description = "OpenSwitch ONIE Installer."
+  checks      = ["DCO", "CodeFactor", "WIP", "buildkite/opx-onie-installer"]
 }
 
 module "opx-pas" {
@@ -280,6 +282,13 @@ module "opx-snmp" {
   name        = "opx-snmp"
   description = ""
   checks      = ["DCO", "buildkite/opx-snmp-stretch"]
+}
+
+module "opx-system-utils" {
+  source      = "./modules/repo"
+  name        = "opx-system-utils"
+  description = "Tools and services for monitoring system status and telemetry"
+  checks      = ["DCO"]
 }
 
 module "opx-test" {
@@ -324,4 +333,5 @@ module "tools_opx-py" {
   source      = "./modules/repo"
   name        = "tools_opx-py"
   description = "OpenSwitch development tool"
+  archived    = "true"
 }

@@ -9,6 +9,7 @@ variable "operations_repos" {
     "continuous-integration",
     "linux-sources",
     "opx-build",
+    "opx-linux-config",
     "opx-manifest",
     "opx-onie-installer",
     "rootfs",

@@ -89,6 +89,7 @@ module "linux-sources" {
   source      = "./modules/repo"
   name        = "linux-sources"
   description = "OpenSwitch Linux Sources"
+  archived    = true
 }
 
 module "opx-alarm" {
@@ -151,6 +152,13 @@ module "opx-docs" {
   source      = "./modules/repo"
   name        = "opx-docs"
   description = "OpenSwitch OPX documentation."
+}
+
+module "opx-linux-config" {
+  source      = "./modules/repo"
+  name        = "opx-linux-config"
+  description = "OpenSwitch Linux configuration"
+  checks      = ["DCO", "WIP", "buildkite/opx-linux-config"]
 }
 
 module "opx-logging" {

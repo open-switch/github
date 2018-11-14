@@ -336,10 +336,3 @@ module "salt-opx-examples" {
   name        = "salt-opx-examples"
   description = "Documentation for Salt for OpenSwitch OPX."
 }
-
-module "tools_opx-py" {
-  source      = "./modules/repo"
-  name        = "tools_opx-py"
-  description = "OpenSwitch development tool"
-  archived    = "true"
-}

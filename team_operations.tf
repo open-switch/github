@@ -13,7 +13,6 @@ variable "operations_repos" {
     "opx-manifest",
     "opx-onie-installer",
     "rootfs",
-    "tools_opx-py",
   ]
   type    = "list"
 }

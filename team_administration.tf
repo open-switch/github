@@ -53,7 +53,6 @@ variable "administration_repos" {
     "puppet-opx-examples",
     "rootfs",
     "salt-opx-examples",
-    "tools_opx-py"
   ]
   type    = "list"
 }

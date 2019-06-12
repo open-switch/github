@@ -53,6 +53,7 @@ variable "administration_repos" {
     "puppet-opx-examples",
     "rootfs",
     "salt-opx-examples",
+    "ansible-role-opx-vlan",
   ]
   type    = "list"
 }

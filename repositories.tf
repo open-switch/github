@@ -336,3 +336,9 @@ module "salt-opx-examples" {
   name        = "salt-opx-examples"
   description = "Documentation for Salt for OpenSwitch OPX."
 }
+
+module "ansible-role-opx-vlan" {
+  source      = "./modules/repo"
+  name        = "ansible-role-opx-vlan"
+  description = ""
+}

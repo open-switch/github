@@ -14,6 +14,7 @@ variable "configuration_repos" {
     "chef-opx-examples",
     "puppet-opx-examples",
     "salt-opx-examples",
+    "ansible-role-opx-vlan",
   ]
   type    = "list"
 }

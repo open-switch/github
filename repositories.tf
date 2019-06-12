@@ -36,6 +36,12 @@ module "ansible-role-opx-system" {
   description = "Example Ansible role to provision OPX via linux utilities."
 }
 
+module "ansible-role-opx-vlan" {
+  source      = "./modules/repo"
+  name        = "ansible-role-opx-vlan"
+  description = ""
+}
+
 module "chef-opx-examples" {
   source      = "./modules/repo"
   name        = "chef-opx-examples"

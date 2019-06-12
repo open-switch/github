@@ -12,6 +12,7 @@ variable "administration_repos" {
     "ansible-role-opx-mac",
     "ansible-role-opx-qos",
     "ansible-role-opx-system",
+    "ansible-role-opx-vlan",
     "chef-opx-examples",
     "continuous-integration",
     "github",

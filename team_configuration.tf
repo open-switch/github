@@ -11,6 +11,7 @@ variable "configuration_repos" {
     "ansible-role-opx-mac",
     "ansible-role-opx-qos",
     "ansible-role-opx-system",
+    "anisble-role-opx-vlan",
     "chef-opx-examples",
     "puppet-opx-examples",
     "salt-opx-examples",
